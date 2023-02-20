@@ -1,0 +1,15 @@
+FROM ubuntu:latest
+
+RUN apt update
+
+RUN apt install -y apt-utils \
+    git \
+    curl \
+    vim \
+    sudo \
+    time \
+    default-jre \
+    maven \
+    zip \
+    tree
+RUN apt -y clean all
